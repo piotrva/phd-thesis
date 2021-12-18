@@ -1,0 +1,16 @@
+\chapter{Wstęp}
+	Pamięci komputerowe dzielą się na nieulotne i ulotne. Pierwsze z nich mogą przechowywać dane bez konieczności zasilania przez długi okres czasu, ale są względnie wolne, biorąc pod uwagę czas zapisu i odczytu. Pamięci takie posiadają zwykle dużą gęstość zapisu, co uzasadnia ich stosowanie do przechowywania danych.
+	
+	Pamięci ulotne z kolei potrzebują stałego zasilania w celu przechowywania danych, jednak w zamian oferują bardzo szybki zapis i odczyt danych. Gęstość zapisu w takich pamięciach jest jednak mniejsza niż w wypadku nieulotnych.
+
+	W ostatnich latach zaprezentowane zostały nowe typy pamięci \cite{fujisaki2013review,kent2015new}, które łączą zalety obu przedstawionych powyżej typów, oferując czasy zapisu-odczytu porównywalne z pamięciami ulotnymi, jednocześnie umożliwiając przechowywanie danych po odłączeniu zasilania. Obecnie najszerzej znane typy takich pamięci to FRAM, PCRAM, ReRAM oraz MRAM, których to dotyczy niniejsza praca.
+    
+    Pamięci MRAM, czyli magnetyczne pamięci RAM, mają praktycznie nieograniczoną ilość cykli zapisu-odczytu, a czasy dostępu moga być porównywane z pamięciami DRAM. Są dodatkowo odporne na promieniowanie jonizujące/kosmiczne. Czyni to je szczególnie interesującymi magaznyami danych do zastosowania w sondach kosmicznych, lotnictwie i innych dziedzinach, wymagających wysokiej niezawodności. Omawianym w tej pracy, jednym z kilku typów pamięci MRAM, jest pamięć STT-MRAM, wykorzystująca transfer spinowego momentu siły (Spin Tarnsfer Torque). Pamięci te są stosunkowo efektywne pod względem energetycznym.
+    
+    Wadą pamięci STT-MRAM jest jednak stosunkowo niska gęstość zapisu. Wynika ona z faktu, że duży tranzystor, mogący zapewnić odpowiednią gęstość prądu w czasie krótkiego impulsu, steruje wielokrotnie mniejszym elementem pamiętającym. Dlatego ważnym krokiem w kierunku optymalizacji pamięci STT-MRAM jest możliwość sterowania za pomocą jednego tranzystora strukturą mogącą przechowywać wiele bitów - pozwoli to na zwiększenie gęstości zapisu, a zatem pojemności i obszaru stosowania tych pamięci.
+    
+    Obecnie przedstawiono niewiele pomysłów wykonania wielobitowej struktury pamiętającej, ponieważ skupiano wysiłki albo na zaprojektowaniu jednego elementu, który mógłby być stabilnym w wielu stanach, albo na łączeniu elementów poprzez ich wykonanie jeden na drugim. Oba te podejścia stanowią jednak w obecnyczh czasach wyzwanie dla procesu produkcji.
+    
+    W tej pracy przedstawiono nowe podejście - przeanalizowano możliwość elektrycznego połączenia równoległego i szeregowego pojedynczych elementów pamiętających STT-MRAM a także przeprowadzono szereg eksperymentów. Jako rezultat końcowy osiągnięto wykonaną eksperymentalnie 3-bitową strukturę pamiętającą opartą na połączonych szeregowo standardowych komórkach STT-MRAM. Daje to możliwość produkcji pamięci o większej gęstości zapisu bez znacznej modyfikacji stosowanych obecnie technik produkcyjnych.
+    
+    Na rozwiązanie to zgłoszono wniosek patentowy oznaczony numerem P.427097, którego głównym autorem jest autor niniejszej pracy.

@@ -1,0 +1,27 @@
+\chapter{Introduction}
+    Computer memories can be primarily classified into two groups: volatile and non-volatile memories. Non-volatile memories are able to store data without power applied for a long period of time, but usually are relatively slow in terms of writing speed and data access time. Such memories are for example Hard Drive Disks (HDD) or Flash memories. They exhibit large data density, what makes them perfect for storage of data without a need of fast access.
+    
+    Volatile memories, in contrast, need constant power supply to preserve data, but offer very fast read and write operations. The data density is smaller than for non-volatile memories.
+    
+    In the past few years some new types of memories have been presented \cite{fujisaki2013review,kent2015new}, which connect advantages of standard volatile and non-volatile memories. They offer read-write speeds comparable to fast volatile memories, while still being able to preserve data without power. These types include:
+    
+    \begin{itemize}[noitemsep,label=\textbullet]
+    	\item FRAM -- Ferroelectric Random Access Memory (RAM), which is similar to the classic Dynamic RAM (DRAM) memory, but replaces the dielectric with a ferroelectric material
+    	\item PCRAM -- Phase Change RAM, which bases on materials, that can change the phase form amorphous to crystal, what is reflected in the change of resistance of the storage element
+    	\item ReRAM -- Redox RAM, which bases on redox reactions in the storage element, what is reflected in the change of resistance of the storage element
+    	\item MRAM -- Magnetoresistive RAM, which bases on effects such as Tunnel Magnetoresistance, Spin Transfer Torque and other relate to spin electronics
+    \end{itemize}
+    
+    However, considering current state of the art, all these memories have some disadvantages. FRAM memories have very low data density, PCRAM and ReRAM exhibit very limited endurance and the capability of MRAM chips is limited due to the size of the cell driving circuit \cite{kawahara20082}, which is considerably bigger than a storage element.
+    
+    MRAM memories, which are subject of interest of this work, have the following advantages: their endurance is theoretically unlimited \cite{kent2015new}, their write and read speeds can be compared to DRAM memory (especially the writing speed is much shorter than for FLASH). In addition they are ionizing-cosmic-radiation resistant, which makes them perfect for use in avionics and space electronics. 
+    
+    There are several types of MRAM memories, taking into account the method of data writing, for example: field-driven (toggle), spin transfer torque (STT-MRAM), domain-wall motion (DW motion) and voltage-controlled spintronics memories (VoCSM) \cite{yoda2016voltage}. The field-driven MRAMs as well as STT-MRAMs are commercially available nowadays, while other types are still the subject of research. Additionally, field-driven memories turn out to be less power efficient and have lower densities than STT memories.
+    
+    The limitation of data density, mentioned above, is the result of the current needed to switch the STT-MRAM storage element compared to current density allowed in state-of-the-art transistors. Therefore, the ability to drive multiple storage elements using one transistor, resulting in having a multi-bit memory cell, can lead to considerable improvement in terms of MRAMs capability and, as a result, extend the area of their application.
+    
+    To date, very few practical implementations of multi-bit MRAM cells have been presented. This is mainly due to the fact, that efforts were made to produce a single storage element capable of being stable in more than two states, or to produce multiple storage elements on the top of each other. Both of these approaches are very challenging for the process of manufacture.
+    
+    In this thesis a new approach is presented. The analysis of serial and parallel connections of multiple standard STT-MRAM elements was performed, as well as experiments were conducted. The final result of this work includes practical realisation of three-bit storage cell based on STT-MRAM elements.
+    
+    In Sec. \ref{sec:Principles} the physical phenomenon, MRAMs are based on, is introduced to the reader and the approach presented in the thesis justified. Then, in Sec. \ref{sec:Fabrication}, a complete fabrication process of MRAM cell is described. Later, in Sec. \ref{sec:Experiment}, an experiment is described, and results discussed. As a conclusion, future challenges of the presented solutions are briefly described in Sec. \ref{sec:FutureWork}. The work is summarized in Sec. \ref{sec:Summary}.
