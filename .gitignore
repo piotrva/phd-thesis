@@ -1,0 +1,9 @@
+*.aux
+*.synctex.gz
+*.toc
+00_main-blx.bib
+00_main.out
+00_main.log
+00_main.blg
+00_main.bbl
+00_main.run.xml
