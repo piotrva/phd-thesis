@@ -76,49 +76,30 @@
 \vspace*{1cm}
 
 % Faculty name
-{\Large{\bfseries\scshape \@facultyPL}}\\
+{\Large{\bfseries\scshape \@facultyEN}}\\
 
 % Department name
-{\large\textsc{\@departmentPL}}\vspace*{2cm}
+{\large\textsc{\@departmentEN}}\vspace*{2cm}
 
 % Thesis type
-{\huge\scshape \@thesistypePL}\\\vspace*{1cm}
+{\huge\scshape \@thesistypeEN}\\\vspace*{1cm}
 
 % Thesis title
 {\LARGE{\bfseries\scshape \@titleEN}}\\\vspace*{0.5cm}
-{\Large{\bfseries\scshape \@titlePL}}\\\vspace*{1cm}
+%{\Large{\bfseries\scshape \@titlePL}}\\\vspace*{1cm}
 
 % Author's name, study course and promotor
 \begin{flushleft}
 \begin{tabbing}
-\large{\scshape Autor:} \hspace{4cm} \= \@author \\
-\large{\scshape Kierunek studiów:} \> \@course \\
-\large{\scshape Opiekun pracy:} \> \@supervisorPL \\
+\large{\scshape Author:} \hspace{4cm} \= \@author \\
+\large{\scshape Scientific discipline:} \> \@course \\
+\large{\scshape Supervisor:} \> \@supervisorEN \\
 \end{tabbing}
 \end{flushleft}
 
 \vfill{\Large Krak\'{o}w \@date}
 
 \end{center}
-
-% Statement concerning legal issues of writing the thesis
- \titlepage
-
-\begin{flushright}
-\begin{minipage}[!h]{12cm}
-\mbox{\large{\scshape \textbf{OŚWIADCZENIE AUTORA PRACY}}}\\[3mm] 
-{\scshape Uprzedzony o odpowiedzialności karnej na podstawie art. 115 ust. 1 i 2 ustawy z dnia 
-4 lutego 1994 r. o prawie autorskim i prawach pokrewnych (t.j. Dz.U. z 2006 r. Nr 90, poz. 631 z późn. zm.): „ Kto przywłaszcza sobie autorstwo albo wprowadza w błąd co do autorstwa całości lub części cudzego utworu albo artystycznego wykonania, podlega grzywnie, karze ograniczenia wolności albo pozbawienia wolności do lat 3. Tej samej karze podlega, kto rozpowszechnia bez podania nazwiska lub pseudonimu twórcy cudzy utwór 
-w wersji oryginalnej albo w postaci opracowania, artystyczne wykonanie albo publicznie zniekształca taki utwór, artystyczne wykonanie, fonogram, wideogram lub nadanie.”, a także uprzedzony o odpowiedzialności dyscyplinarnej na podstawie art. 211 ust. 1 ustawy z dnia 
-27 lipca 2005 r. Prawo o szkolnictwie wyższym (t.j. Dz. U. z 2012 r. poz. 572, z późn. zm.) „Za naruszenie przepisów obowiązujących w uczelni oraz za czyny uchybiające godności studenta student ponosi odpowiedzialność dyscyplinarną przed komisją dyscyplinarną albo przed sądem koleżeńskim samorządu studenckiego, zwanym dalej „sądem koleżeńskim”, oświadczam, że niniejszą pracę dyplomową wykonałem(-am) osobiście, samodzielnie i że nie korzystałem(-am) ze źródeł innych niż wymienione w pracy.}\\	% Added by JN on 25 Dec 2016
-\end{minipage}
-
-\vspace{2cm}
-
-\makebox[6cm][s]{\dotfill}\par
-\makebox[6cm][c]{\small PODPIS}
-
-\end{flushright}
 
  \titlepage
 
@@ -131,7 +112,7 @@ w wersji oryginalnej albo w postaci opracowania, artystyczne wykonanie albo publ
 
 
 
-\setcounter{page}{3}
+\setcounter{page}{2}
 
 }
 
