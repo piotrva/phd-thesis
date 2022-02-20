@@ -1,0 +1,232 @@
+\documentclass[pdflatex,11pt]{aghdpl}
+
+%\documentclass{aghdpl}               % przy kompilacji programem latex
+%\documentclass[pdflatex,en]{aghdpl}  % praca w j�zyku angielskim
+%\usepackage[polish]{babel}
+%\usepackage[latin2]{inputenc}
+
+%\usepackage[english]{babel}
+\usepackage[english, polish]{babel}
+\usepackage[utf8]{inputenc}
+%\usepackage[cp1250]{inputenc}
+
+% wzory w jednym wierszu obok siebie i tekst mi�dzy nimi
+\usepackage{amsmath}
+
+% rysunki a, b, c ...
+\usepackage{subfig}
+
+% umieszczanie rysunk�w dok�adnie w miejscu wstawienia (H)
+\usepackage{float}
+
+% indeks dolny 
+\usepackage{fixltx2e}
+
+\usepackage{longtable}
+
+\usepackage{graphicx, array, blindtext}
+\usepackage[export]{adjustbox}
+
+% rozmiar czcionki w opisach rysunk�w
+\usepackage[font=footnotesize,labelfont=bf]{caption}
+%   scriptsize
+%   footnotesize
+%   small
+%   normalsize
+%   large
+%   Large
+
+% opis tabeli nad tabel�
+\usepackage{float}
+
+\floatstyle{plaintop}
+\restylefloat{table}
+
+% wy��czenie dzielenia wyraz�w na ko�cu linii
+\usepackage[none]{hyphenat}
+
+% pogrubienie linii w tabelach
+\usepackage{booktabs}
+
+% wielowierszowe r�wnania (\begin{aligned} \end{aligned} wewn�trz {equation}, znak wyr�wnania "`&"'
+\usepackage{amsmath}
+
+% dodatkowe pakiety
+%\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{listings}
+
+% wielowierszowe kom�rki w tabelach
+\usepackage{multirow}
+
+\usepackage{array}
+
+%\usepackage{natbib}
+%\usepackage{multibib}
+%\newcites{misc}{Miscellaneous}	% https://tex.stackexchange.com/questions/93845/suppress-printing-of-only-bibentry-references-with-natbib
+\usepackage{bibentry}
+\nobibliography*
+
+% cudzys��w w tytyle w bibliografii
+\usepackage{csquotes}
+
+% dodaj pliki pfg
+\usepackage{pdfpages} 
+
+\usepackage{textcomp}
+
+% kolorowe hiperlinki
+\usepackage{xcolor}
+
+\usepackage[
+hidelinks,	% ukrycie prostok�nych obw�dek hiperlink�w
+linktocpage,	% ustawienie w toc, lof i lot, �e tylko numer strony jest hiperlinkiem
+ocgcolorlinks,	% czarne hiperlinki w wydruku
+bookmarks,
+bookmarksopen,
+bookmarksopenlevel=2,
+bookmarksnumbered,
+pdfstartview=Fit,
+%pdfview=FitH
+]{hyperref}
+
+\hypersetup{
+	pdftitle={Low-loss microwave circuits in strip transmission line technique},
+	pdfauthor={Jakub Sorocki}
+}
+
+% kolory hiperlink�w
+\hypersetup{	
+    colorlinks,
+    linkcolor={red!55!black},
+    citecolor={blue!55!black},
+    urlcolor={blue!80!black}
+}
+
+\lstloadlanguages{TeX}
+
+%---------------------------------------------------------------------------
+
+\author{Piotr Rzeszut}
+\shortauthor{P. Rzeszut}
+
+\titlePL{Statyczna i dynamiczna charakteryzacja magnetycznych z\l{}\c acz tunelowych z anizotropi\c a prostopad\l{}\c a.}
+\titleEN{Static and dynamic characterization of magnetic tunnel junctions with perpendicular anisotropy.}
+
+\shorttitlePL{Statyczna i dynamiczna charakteryzacja magnetycznych z\l{}\c acz tunelowych....} % skr�cona wersja tytu�u je�li jest bardzo d�ugi
+\shorttitleEN{Static and dynamic characterization of magnetic tunnel junctions...}
+
+\thesistypePL{Rozprawa doktorska}
+\thesistypeEN{Ph.D. Thesis}
+
+\supervisorPL{dr hab. inz. Witold Skowroński, prof. n. AGH}
+\supervisorEN{Prof. Witold Skowroński, D.Sc.}
+
+\date{2022}
+\dateMonth{June}
+
+\departmentPL{Instytut Elektroniki}
+\departmentEN{Institute of Electronics}
+
+\facultyPL{Wydzia\l{} Informatyki, Elektroniki i Telekomunikacji}
+\facultyEN{Faculty of Computer Science, Electronics and Telecommunications}
+
+\setlength{\cftsecnumwidth}{10mm}
+
+%---------------------------------------------------------------------------
+
+\begin{document}
+
+
+%--- front matter --
+% dedication, declaration, acknowledgement, abstract
+% title page, author, copyright, abstract, streszczenie, acknowledgements, list of papers
+\titlepages
+ 
+% tableofcontents, list of figures, list of tables, nomenclature
+
+\fancyhead[LO]{\slshape{\small Contents}}
+\fancyhead[RO]{\bfseries \thepage}
+\fancyhead[RE]{\slshape{\small Contents}}
+\fancyhead[LE]{\bfseries \thepage}
+
+\tableofcontents
+\cleardoublepage 
+
+\fancyhead[LO]{\slshape{\small List of Papers}}
+\fancyhead[RO]{\bfseries \thepage}
+\fancyhead[RE]{\slshape{\small List of Papers}}
+\fancyhead[LE]{\bfseries \thepage}
+\include{papers}
+
+%\fancyhead[LO]{\slshape{\small List of Figures}}
+%\fancyhead[RO]{\bfseries \thepage}
+%\fancyhead[RE]{\slshape{\small List of Figures}}
+%\fancyhead[LE]{\bfseries \thepage}
+%
+%\listoffigures
+%\cleardoublepage
+
+%\fancyhead[LO]{\slshape{\small List of Tables}}
+%\fancyhead[RO]{\bfseries \thepage}
+%\fancyhead[RE]{\slshape{\small List of Tables}}
+%\fancyhead[LE]{\bfseries \thepage}
+%
+%\listoftables
+%\cleardoublepage
+
+%\fancyhead[LO]{\slshape{\small List of Abbreviations}}
+%\fancyhead[RO]{\bfseries \thepage}
+%\fancyhead[RE]{\slshape{\small List of Abbreviations}}
+%\fancyhead[LE]{\bfseries \thepage}
+%
+%\printnomenclature
+%\cleardoublepage
+
+%--- main paper ---
+
+\fancyhead[LO]{\slshape{\small \rightmark}}
+\fancyhead[RO]{\bfseries \thepage}
+\fancyhead[RE]{\slshape{\small \leftmark}}
+\fancyhead[LE]{\bfseries \thepage}
+
+\include{chapter_1/intro}
+\include{chapter_2/theory}
+\include{ch_3/serspin_mem}
+\include{chapter_4/performance}
+\include{chapter_5/emerging}
+\include{chapter_6/front}
+\include{chapter_7/summary}
+
+%\fancyhead[L]{\slshape{\small \leftmark}}		% nazwa rozdzia�u w nag��wku
+\fancyhead[LO]{\slshape{\small \leftmark}}
+\fancyhead[RO]{\bfseries \thepage}
+\fancyhead[RE]{\slshape{\small \leftmark}}
+\fancyhead[LE]{\bfseries \thepage}
+
+%--- back matter ---
+% bibliography, authors info
+
+%\fancyhead[L]{\slshape{\small \leftmark}}
+%\fancyhead[L]{\slshape{\small Bibliography}}		% zmiana nag��wka
+\fancyhead[LO]{\slshape{\small Bibliography}}
+\fancyhead[RO]{\bfseries \thepage}
+\fancyhead[RE]{\slshape{\small Bibliography}}
+\fancyhead[LE]{\bfseries \thepage}
+
+\bibliographystyle{IEEEtran_no_dash}	%IEEE sortowanie kolejnoscia wystapnienia
+\bibliography{references_main,references_misc} % for multiple file bibliography  notsubtype=inet
+%\bibliography{references_main}
+%\bibliographystylemisc{IEEEtran_no_dash}
+%\nobibliography{references_misc}
+\addcontentsline{toc}{chapter}{Bibliography}
+
+%\fancyhead[L]{\slshape{\small Author's Achievements}}		% zmiana nag��wka
+\fancyhead[LO]{\slshape{\small Author's Achievements}}
+\fancyhead[RO]{\bfseries \thepage}
+\fancyhead[RE]{\slshape{\small Author's Achievements}}
+\fancyhead[LE]{\bfseries \thepage}
+\include{achievements}
+
+
+\end{document}
